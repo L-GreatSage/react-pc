@@ -1,0 +1,21 @@
+//封装 ls 存储token
+
+const key = 'pc-key'
+
+const setToken = (token) => {
+  return window.localStorage.setItem(key, token)
+}
+
+const getToken = () => {
+  return window.localStorage.getItem(key)
+}
+
+const removeToken = () => {
+  return window.localStorage.removeToken(key)
+}
+
+export {
+  setToken,
+  getToken,
+  removeToken
+}
